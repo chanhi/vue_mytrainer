@@ -26,13 +26,24 @@
 </template>
 
 <script>
+import { useStore } from 'vuex'
 import MyCalender from '../components/MyCalender.vue'
 
 export default {
   name: 'MyPageView',
   components: { MyCalender },
   methods: {
-    logout () {}
+    logout () {
+      const store = useStore()
+      const updatedValue = !store.state.sharedVariable
+      store.commit('setSharedVariable', updatedValue)
+    }
+  },
+  computed: {
+    sharedVariable () {
+      const store = useStore()
+      return store.state.sharedVariable
+    }
   }
 }
 </script>
