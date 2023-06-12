@@ -2,19 +2,22 @@
   <header>
     <nav class="header_nav">
       <div>
-        <router-link to="/"><label class="logo">My Trainer</label></router-link>
+        <router-link to="/"><label class="logo"><i class="fas fa-dumbbell"></i> My Trainer</label></router-link>
       </div>
       <div>
         <input type="checkbox" id="check" />
         <label for="check" class="checkbtn">
           <i class="fas fa-bars"></i>
         </label>
-        <ul>
+        <ul class="menu-lists">
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/exercises">Exercises</router-link></li>
           <li><router-link to="/programs">Programs</router-link></li>
           <li v-if="!login_status">
             <router-link to="/mypage">My Page</router-link>
+          </li>
+          <li v-if="!login_status">
+            <a href="#" @click="logout">Log Out</a>
           </li>
           <li v-if="login_status">
             <a href="#" @click="showLogin = true">Log In</a>
@@ -46,6 +49,9 @@ export default {
     login () {
       this.showLogin = false
       this.login_status = false
+    },
+    logout () {
+      this.login_status = true
     },
     cancelLogin () {
       this.showLogin = false
@@ -117,7 +123,7 @@ a:hover {
   .checkbtn {
     display: block;
   }
-  ul {
+  .menu-lists {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -126,6 +132,7 @@ a:hover {
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+    z-index: 101;
   }
   nav ul li {
     display: block;

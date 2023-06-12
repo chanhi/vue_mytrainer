@@ -121,6 +121,7 @@ export default {
   width: 100%;
   margin-top: 20px;
   border-radius: 6px;
+  border: 2px solid rgb(129, 236, 255);
 }
 .field input,
 .field button {

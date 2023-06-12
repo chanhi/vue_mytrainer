@@ -4,6 +4,7 @@ import ExercisesView from '../views/ExercisesView'
 import ProgramsView from '../views/ProgramsView'
 import SignUpView from '../views/SignUpView'
 import MyPageView from '../views/MyPageView'
+import DescribeView from '../views/DescribeView'
 
 const routes = [
   {
@@ -39,6 +40,11 @@ const routes = [
     path: '/signup',
     name: 'signup',
     component: SignUpView
+  },
+  {
+    path: '/describe',
+    name: 'describe',
+    component: DescribeView
   }
 ]
 

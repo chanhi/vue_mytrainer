@@ -13,8 +13,8 @@
             <img src="../assets/exercises/1.jpg" />
           </div>
           <div class="top-text">
-            <div class="name">Annie Lea</div>
-            <p>Apps Developer</p>
+            <div class="name">Bench Press</div>
+            <p>Chest</p>
           </div>
           <div class="bottom-text">
             <div class="text">
@@ -32,8 +32,8 @@
             <img src="../assets/exercises/2.jpg" />
           </div>
           <div class="top-text">
-            <div class="name">Eliana Maia</div>
-            <p>Website Developer</p>
+            <div class="name">Deadlift</div>
+            <p>Leg, Back, etc</p>
           </div>
           <div class="bottom-text">
             <div class="text">
@@ -52,8 +52,8 @@
             <img src="../assets/exercises/3.jpg" />
           </div>
           <div class="top-text">
-            <div class="name">Harley Briana</div>
-            <p>Graphic Developer</p>
+            <div class="name">Sqaut</div>
+            <p>Leg</p>
           </div>
           <div class="bottom-text">
             <div class="text">
@@ -69,16 +69,18 @@
       </div>
     </div>
 
+    <hr>
+
     <div class="card_container">
       <div>Programs</div>
       <div class="card_item">
         <div class="home_card">
           <div class="img">
-            <img src="../assets/exercises/1.jpg" />
+            <img src="../assets/programs/nsuns.jpg" />
           </div>
           <div class="top-text">
-            <div class="name">Annie Lea</div>
-            <p>Apps Developer</p>
+            <div class="name">nSuns</div>
+            <p>r/Fitness</p>
           </div>
           <div class="bottom-text">
             <div class="text">
@@ -93,11 +95,11 @@
         </div>
         <div class="home_card">
           <div class="img">
-            <img src="../assets/exercises/2.jpg" />
+            <img src="../assets/programs/531bbb.jpg" />
           </div>
           <div class="top-text">
-            <div class="name">Eliana Maia</div>
-            <p>Website Developer</p>
+            <div class="name">5/3/1 BBB</div>
+            <p>Jim Wendler</p>
           </div>
           <div class="bottom-text">
             <div class="text">
@@ -113,11 +115,11 @@
 
         <div class="home_card">
           <div class="img">
-            <img src="../assets/exercises/3.jpg" />
+            <img src="../assets/programs/ppl.jpg" />
           </div>
           <div class="top-text">
-            <div class="name">Harley Briana</div>
-            <p>Graphic Developer</p>
+            <div class="name">redditPPL</div>
+            <p>r/Fitness</p>
           </div>
           <div class="bottom-text">
             <div class="text">

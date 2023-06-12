@@ -54,6 +54,10 @@ export default {
   width: 80%;
   margin: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+}
+.program_img img{
+  height: 220px;
+  max-width: 350px;
 }
 </style>

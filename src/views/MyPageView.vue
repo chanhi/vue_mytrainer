@@ -2,47 +2,25 @@
   <div class="mypage">
     <header>My Page</header>
     <div class="mypage_container">
-      <div class="calender">
-        <MyCalender />
+      <div class="todo">
+        <TodoListVue />
       </div>
-      <div class="edit-info">
-        <form action="#">
-          <div class="my-name">
-            <input type="text" />
-          </div>
-          <div class="my-age">
-            <input type="text" />
-          </div>
-          <div class="my-gender">
-            <input type="text" />
-          </div>
-        </form>
-      </div>
-      <div class="logout">
-        <button @click="logout" class="logout-btn">logout</button>
+      <div class="itsme">
+        <router-link to="/describe">프로그램 소개 버튼: 20202289 정찬희</router-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { useStore } from 'vuex'
-import MyCalender from '../components/MyCalender.vue'
+import TodoListVue from '../components/TodoList.vue'
 
 export default {
   name: 'MyPageView',
-  components: { MyCalender },
-  methods: {
-    logout () {
-      const store = useStore()
-      const updatedValue = !store.state.sharedVariable
-      store.commit('setSharedVariable', updatedValue)
-    }
-  },
-  computed: {
-    sharedVariable () {
-      const store = useStore()
-      return store.state.sharedVariable
+  components: { TodoListVue },
+  data () {
+    return {
+
     }
   }
 }
@@ -50,6 +28,12 @@ export default {
 
 <style>
 .mypage {
+  width: 100%;
+}
+.mypage_container {
   width: auto;
+}
+.itsme {
+  background-color: aquamarine;
 }
 </style>
